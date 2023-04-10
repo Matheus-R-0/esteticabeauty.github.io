@@ -1,0 +1,69 @@
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contato p {
+  margin-bottom: 20px;
+  padding: 0px 0px 0px 40px;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  position: relative;
+}
+
+.contato :nth-child(1)::before {
+  content: url(../img/localizacao.svg);
+  position: absolute;
+  left: 0px;
+}
+.contato :nth-child(2)::before {
+  content: url(../img/contato.svg);
+  position: absolute;
+  left: 0px;
+  top: -6px;
+}
+.contato :nth-child(3)::before {
+  content: url(../img/email.svg);
+  position: absolute;
+  left: 0px;
+}
+
+.contato-2 p {
+  font-size: 1.125rem;
+  line-height: 1.3;
+}
+
+.contato-2 :nth-child(1) {
+  margin-bottom: 30px;
+}
+
+.contato-2 :nth-child(2) {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 60px 60px;
+  }
+  .contato {
+    margin-bottom: 40px;
+  }
+  .contato-2 :nth-child(1) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    padding: 40px 20px;
+  }
+  .footer p {
+    font-size: 0.875rem;
+  }
+}
